@@ -10,3 +10,9 @@ declare module 'lodash.isequal' {
   import main = require('~lodash/index');
   export = main.isEqual;
 }
+
+declare module 'lodash.flatten' {
+  import main = require('~lodash/index');
+  export = main.flatten;
+}
+
