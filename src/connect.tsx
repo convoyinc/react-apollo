@@ -108,7 +108,7 @@ export default function connect(opts?: ConnectOptions) {
   // Helps track hot reloading.
   const version = nextVersion++;
   return function wrapWithApolloComponent(WrappedComponent) {
-    const apolloConnectDisplayName = `Apollo(Connect(${getDisplayName(WrappedComponent)}))`;
+    const apolloConnectDisplayName = `Apollo(${getDisplayName(WrappedComponent)})`;
 
     class ApolloConnect extends Component<any, any> {
       static displayName = apolloConnectDisplayName;
